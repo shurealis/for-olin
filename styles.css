@@ -31,7 +31,7 @@ body {
   }
 }
 
-.envelope:before {
+.envelope::before {
   background-color: #f08080;
   content: "";
   position: absolute;
@@ -53,7 +53,7 @@ body {
   box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
 }
 
-.card:before {
+.card::before {
   content: "";
   position: absolute;
   border: 3px solid #003049;
@@ -88,8 +88,8 @@ body {
   width: 20px;
 }
 
-.heart:before,
-.heart:after {
+.heart::before,
+.heart::after {
   content: "";
   background-color: #d62828;
   border-radius: 50%;
@@ -98,12 +98,12 @@ body {
   width: 20px;
 }
 
-.heart:before {
+.heart::before {
   top: -12px;
   left: 0;
 }
 
-.heart:after {
+.heart::after {
   left: 12px;
   top: 0;
 }
@@ -139,16 +139,16 @@ body {
   top: 50px;
 }
 
-.one:before,
-.one:after,
-.two:before,
-.two:after,
-.three:before,
-.three:after,
-.four:before,
-.four:after,
-.five:before,
-.five:after {
+.one::before,
+.one::after,
+.two::before,
+.two::after,
+.three::before,
+.three::after,
+.four::before,
+.four::after,
+.five::before,
+.five::after {
   content: "";
   background-color: red;
   border-radius: 50%;
@@ -157,20 +157,20 @@ body {
   width: 10px;
 }
 
-.one:before,
-.two:before,
-.three:before,
-.four:before,
-.five:before {
+.one::before,
+.two::before,
+.three::before,
+.four::before,
+.five::before {
   top: -5px;
   left: 0;
 }
 
-.one:after,
-.two:after,
-.three:after,
-.four:after,
-.five:after {
+.one::after,
+.two::after,
+.three::after,
+.four::after,
+.five::after {
   top: 0px;
   left: 5px;
 }
@@ -212,7 +212,7 @@ body {
   z-index: 10;
 }
 
-.front:before {
+.front::before {
   position: absolute;
   content: "";
   border-left: 300px solid #f8ad9d;
@@ -229,7 +229,7 @@ body {
   height: 25px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.03);
-  top: 265px;
+  top: 235px;
   left: -15px;
   z-index: -1;
   animation: scale 3s linear infinite;
